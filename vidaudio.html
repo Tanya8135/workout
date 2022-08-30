@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css/style.css">
+    <title>Видео и аудио</title>
+</head>
+<body>
+    <!-- Видео -->
+    <h3 class="text1">Видео</h3>
+    <video src="http://techslides.com/demos/sample-videos/small.webm" poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640"  
+    preload="none">
+    </video>
+
+    <!-- Форматы видео -->
+    <h3 class="text1">Форматы видео</h3>
+    <video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
+        <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+        <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg">
+    </video>
+
+    <!-- Аудио -->
+    <h3 class="text1">Аудио</h3>
+    <audio src="./music/brohm_amp_pane_-_love_the_way_you_lie.mp3" controls preload="none"></audio>
+
+    <!-- Форматы аудио -->
+    <h3 class="text1">Форматы аудио</h3>
+    <audio controls>
+        <source src="./music/brohm_amp_pane_-_love_the_way_you_lie.mp3" type="audio/mp3">
+        <source src="./music/brohm_amp_pane_-_love_the_way_you_lie.ogg" type="audio.ogg">
+    </audio>
+
+    <!-- Поддержка старых браузеров -->
+    <h3 class="text1">Поддержка старых браузеров</h3>
+    <video
+  poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+  width="640"
+  controls
+>
+  <source
+    src="http://techslides.com/demos/sample-videos/small.webm"
+    type="video/webm"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.mp4"
+    type="video/mp4"
+  />
+  <source
+    src="http://techslides.com/demos/sample-videos/small.ogg"
+    type="video/ogg"
+  />
+
+  Your browser does not support the <code>video</code> element.
+</video>
+
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg" />
+  <source src="song.ogg" type="audio/ogg" />
+
+  Your browser does not support the <code>audio</code> element. 
+</audio>
+<a href="css.html" target="_blank">CSS</a>
+</body>
+</html>

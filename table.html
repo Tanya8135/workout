@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css/style.css">
+    <title>Table</title>
+</head>
+<body>
+    <!--Заголовок таблицы-->
+    <table>
+        <caption>Расписание поездов</caption>
+        <!--Ячейка-заголовок таблицы-->
+        <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Маршрут</th>
+            <th>Время в пути</th>
+        </tr>
+    </thead>
+    <!-- Таблица (расписание поездов)-->
+    <tbody>    
+        <tr>
+            <td>433</td>
+            <td>Киев - Ковель</td>
+            <td>5 часов</td>
+        </tr>
+        <tr>
+            <td>701</td>
+            <td>Харьков - Днепр</td>
+            <td>7 часов</td>
+        </tr>
+        <tr>
+            <td>258</td>
+            <td>Львов - Одесса</td>
+            <td>4 часа</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--Группировка ячеек-->
+    <h3 class="text1">Группировка ячеек</h3>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Облачный сервер</th>
+                <th colspan="3">Использование</th>
+                <!-- <th></th> Эти ячейки удаляются (colspan)
+                     <th></th> -->
+            </tr>
+            <tr>
+            <!-- <th></th>       Эта ячейка тоже удаляется (rowspan) --> 
+            <th>Пользователи</th>
+            <th>Посещений</th>
+            <th>Объём</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Google</td>
+                <td>12000</td>
+                <td>307000</td>
+                <td>1000 Tb</td>
+            </tr>
+            <tr>
+                <td>Amazon</td>
+                <td>9000</td>
+                <td>200500</td>
+                <td>800 Tb</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Тег <dl>-->
+        <h3 class="text1">Тег &ltdl&gt</h3>
+        <dl>
+            <dt>JPEG</dt>
+            <dd>
+                Large files that do not require transparent backgrounds or animations. 
+                This format is ideal for vivid photorealistic photographs as it can 
+                contain millions of colors. <br>
+                Большие файлы не требующие прозрачного фона или анимации. Этот формат 
+                идеален для красочных фотореалестичных фотографий, так как они могут 
+                содержать миллионы цветов.
+            </dd>
+            <dt>PNG</dt>
+            <dd>
+                Has an additional parameter for describing transparency - the alpha 
+                channel. Suitable for images with transparent or monochrome backgrounds. 
+                Used for icons and decorative items. <br>
+                В отличии от JPEG, имеет дополнительный параметр для описания прозрачности
+                (альфа канал). 
+            </dd>
+
+            <dt>webP</dt>
+            <dd>
+                A replacement format for PNG and JPEG, but with incomplete browser 
+                support. 
+                When equal image quality, the compressed files will be smaller than 
+                PNG and JPEG on average by 25%. <br>
+                Формат заменяющий PNG и JPEG, но еще с не полной поддержкой в браузерах. 
+                При ровном качестве изображения, сжатые файлы будут меньше PNG и JPEG в 
+                среднем на 25%
+            </dd>
+        </dl>
+
+        <!--Тег <span>-->
+            <h3 class="text1">Тег &ltspan&gt</h3>
+            <p>
+                Тег <span class="accent">span</span> это универсальный контейнер для 
+                мелкого текстового контента.
+            </p>
+
+        <!--Тег <pre>-->
+                <h3 class="text1">Тег &ltpre&gt</h3>
+                <pre>
+                    Wyatt resteth here, that quick could never rest;
+                    Whose heavenly gifts increased by disdain, 
+                    And virtue sank the deeper in his breast;
+                    Sush profit he by envy could obtain.
+                </pre>
+
+                <pre>
+                    A head where wisdom mysteries did frame,
+                    Whose hammers beat still in that lively brain
+                    As on a stithy where that some work of fame
+                    Was daily wrought, to turn to Britain's gain.
+                </pre>
+
+                <pre>
+                    A visage stern and mild, where both did grow,
+                    Vice to contemn, in virtue to rejoice;
+                    Amid great storms, whom grace assured so
+                    To live upright and smile at fortune's choice.
+                </pre>
+
+    <!--Теги <sup> и <sub>-->
+    <h3 class="text1">Теги &ltsup&gt и &ltsub&gt</h3>
+        <p>Formula of water - H<sub>2</sub>O</p>
+        <p>Total area of the room - 150m<sup>2</sup></p>
+        <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
+
+        <!--Тег <time>-->
+    <h3 class="text1">Тег &lttime&gt</h3>
+    <p>
+        Последние новости на <time datetime="2019-12-14">14 декабря 2019 года</time>
+    </p>
+
+    <p>
+        Заседание состоялось в <time datetime="2018-07-14T11:30">11:30 утра</time>
+    </p>
+
+    <!-- Тег <address> -->
+        <h3 class="text1">Тег &ltaddress&gt</h3>
+        <address>
+            г. Киев, <br>
+            Бульвар Леси Украинки, д. 26, <br>
+            4й этаж офис 427
+        </address>
+
+        <address>
+            <a href="mailto:mango@mail.pig">mango@mail.pig</a>
+            <a href="tel:+1112223344">(111) 222-33-44</a>
+        </address>
+
+        <!-- Теги <strong> и <b> -->
+            <h3 class="text1">Теги &ltstrong&gt и &ltb&gt</h3>
+            <p>
+                <strong>Внимание!</strong> Заканчивается срок подписки. 
+                <strong>Учётная запись будет приостановлена.</strong> Пожалуйста 
+                продлите подписку или свяжитесь со службой поддержки
+            </p>
+
+            <!-- Теги <em> и <i> -->
+                <h3 class="text1">Теги &ltem&gt и &lti&gt</h3>
+
+                <a href="symbolsub.html" target="_blank">Символьные подстановки</a>
+</body>
+</html>

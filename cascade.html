@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css/cascade.css">
+    <title>Каскад стилей</title>
+</head>
+<body>
+    <h1>Каскад стилей</h1>
+    <h3>Селекторы 4-го ранга</h3>
+<article>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio animi 
+        veritatis ratione eos nesciunt ullam ab dignissimos corporis facilis, 
+        iusto commodi facere quisquam explicabo pariatur voluptatem labore 
+        molestiae, alias repudiandae.
+    </p>
+    <a href="">Читать дальше...</a>
+</article>
+
+<!-- Селекторы 3-го ранга -->
+<h3>Селекторы 3-го ранга</h3>
+<article class="post">
+    <h1 class="post-title">Lorem ipsum dolor sit amet.</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Corrupti officiis commodi eos a, labore iste repellat, 
+        id mollitia, quae distinctio sed? Expedita officia eum 
+        amet modi dolor incidunt cumque perferendis!
+    </p>
+    <a href="" class="post-link">Читать дальше...</a>
+</article>
+
+<!-- Селекторы 2-го ранга -->
+<h3>Селекторы 2-го ранга</h3>
+<article class="post">
+    <h1 class="post-title" id="title">Lorem ipsum dolor sit amet.</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Corrupti officiis commodi eos a, labore iste repellat, 
+        id mollitia, quae distinctio sed? Expedita officia eum 
+        amet modi dolor incidunt cumque perferendis!
+    </p>
+    <a href="" class="post-link">Читать дальше...</a>
+</article>
+<!-- Селекторы 1-го ранга -->
+<h3>Селекторы 1-го ранга</h3>
+<!-- Специфичность такого стиля - 1 0 0 0 -->
+<p style="color: green;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eveniet 
+    maxime! Quis velit sed ipsa consequuntur, molestias officiis 
+    voluptatibus alias iure, nam repudiandae voluptatem assumenda 
+    aperiam maiores recusandae incidunt quae.
+</p>
+
+<!-- Одинаковая специфичность -->
+<h3>Одинаковая специфичность</h3>
+<p>Пример только в cascade.css</p>
+
+<!-- Избегаем специфичность -->
+<h3>Избегаем специфичность</h3>
+<article class="post">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+      veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+      cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="">Читать дальше...</a>
+  </article>
+
+  <article class="post">
+    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+    <p class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+      veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+      cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a class="link" href="">Читать дальше...</a>
+  </article>
+
+
+  <article class="post">
+    <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+    <p class="post-text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+      veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+      cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="" class="post-link">Читать дальше...</a>
+  </article>
+
+  <!-- Ключевое слово !important -->
+  <h3>Ключевое слово !important</h3>
+  <p class="text" id="text-id">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi excepturi 
+    earum mollitia explicabo doloremque necessitatibus dolores. Ad omnis 
+    recusandae aliquam, enim corporis officiis, iste, voluptates corrupti 
+    delectus laborum deleniti in!
+  </p>
+
+  <!-- Наследование свойств -->
+  <h3>Наследование свойств</h3>
+  <article class="post">
+    <h1>Популярное за этот месяц</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+      veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+      cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="">Читать дальше...</a>
+  </article>
+</body>
+</html>

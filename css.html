@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css/style.css">
+    <style type="text/css">
+        p {
+            color: rgb(5, 53, 5);
+            font-size: 24px;
+        }
+    </style>
+    <title>CSS</title>
+</head>
+<body>
+    <h1 class="text-c">CSS</h1>
+    <h3 class="text-css">Подключение стилей</h3>
+    <h4 class="text-cs">Встроенные стили</h4>
+
+    <p style="color: blue; font-size:24px">Этот текст будет синим</p>
+
+    <!-- Внешняя таблица стилей -->
+    <h3 class="text-cs">Внешняя таблица стилей</h3>
+    <!-- <head>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head> -->
+<p>Смотреть код</p>
+    <!-- Селекторы -->
+    <h3 class="text-css">Селекторы</h3>
+
+    <!-- Ссылки -->
+    <h3 class="text-css">Ссылки</h3>
+    <a href="https://github.com/nicothin/idiomatic-pre-CSS/blob/gh-pages/words_and_abbreviations.md" target="_blank">Слова и сокращения в CSS-классах</a>
+    <a href="https://github.com/web-standards-ru/dictionary/blob/main/dictionary.md" target="_blank">Словарь терминов по фронтенду</a>
+    <a href="https://github.com/yoksel/common-words" target="_blank">Слова, часто используемые в CSS-классах</a>
+
+    <!-- Селектор класса --> 
+    <h3 class="text1">Селектор класса</h3>
+    <h1 class="title">Привет, я Mango.</h1>
+    <p class="text">
+        Добро пожаловать на мою личную страницу. Тут можно посмотреть
+        <a class="link" href="">проекты</a>
+    </p>
+
+    <!-- Композиция классов -->
+    <h3 class="text1">Композиция классов</h3>
+    <p class="alert success">Пополнение счёта выполнено</p>
+    <p class="alert warning">Внимание, будут изменены тарифы</p>
+    <p class="alert error">Ошибка проведения транзакции</p>
+
+    <!-- Селектор идентификатора -->
+    <h3 class="text1">Селектор идентификатора</h3>
+    <h1 id="title">Заголовок страницы</h1>
+
+    <!-- Селектор потомка -->
+    <h3 class="text1">Селектор потомка</h3>
+    <a href="">Читайте наш блог!</a>
+
+    <ul class="social-links">
+        <li>
+            <a href="">Twitter</a>
+        </li>
+        <li>
+            <a href="">Instagram</a>
+        </li>
+        <li>
+            <a href="">Facebook</a>
+        </li>
+    </ul>
+
+    <!-- Селектор ребёнка -->
+    <h3 class="text1">Селектор ребёнка</h3>
+    <ul class="menu">
+        <li>
+            Комьютеры и комплектующие
+        <ul class="submenu">
+            <li>Процессоры</li>
+            <li>Мониторы</li>
+            <li>Видеокарты</li>
+        </ul>
+    </li>
+    <li>
+        Бытовая техника
+        <ul class="submenu">
+            <li>Холодильники</li>
+            <li>Телевизоры</li>
+            <li>Стиральные машины</li>
+        </ul>
+    </li>
+    <li>
+        Товары для дома
+        <ul class="submenu">
+            <li>Кресла</li>
+            <li>Матрасы</li>
+            <li>Электрокамины</li>
+        </ul>
+    </li>
+    </ul>
+
+    <!-- Селектор атрибута -->
+    <h3 class="text1">Селектор атрибута</h3>
+    <a href="https://htmlreference.io" title="Справочник тегов">
+        htmlreference.io
+    </a>
+    <a href="https://cssreference.io" title="Справочник стилей">
+        cssreference.io
+    </a>
+    <a href="https://www.youtube.com">YouTube</a>
+    <p class="explanation">Выберет все ссылки с атрибутом title</p>
+
+    <a href="https://htmlreference.io" title="Справочник тегов">
+        htmlreference.io
+    </a>
+    <a href="https://cssreference.io" title="Справочник стилей">
+        cssreference.io
+    </a>
+    <a href="https://www.youtube.com">YouTube</a>
+
+    <!-- Псевдоклассы состояния -->
+    <h3 class="tema">Псевдоклассы состояния</h3>
+    <!-- Псевдокласс :hover -->
+    <h3 class="text1">Псевдокласс :hover</h3>
+    <p class="explanation">
+        Отличную шпаргалку по тегам можно найти
+        <a class="link" href="https://htmlreference.io" target="_blank">по ссылке</a>
+    </p>
+
+    <ul class="social-links">
+        <li><a class="link" href="https://twitter.com">Twitter</a></li>
+        <li><a class="link" href="https://www.instagram.com">Instagram</a></li>
+        <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
+    </ul>
+
+    <!-- Псевдокласс :focus -->
+    <h3 class="text1">Псевдокласс :focus</h3>
+    <ul class="social-links">
+        <li><a class="link" href="https://twitter.com">Twitter</a></li>
+        <li><a class="link" href="https://www.instagram.com">Instagram</a></li>
+        <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
+    </ul>
+
+    <!-- Псевдокласс :active -->
+    <h3 class="text1">Псевдокласс :active</h3>
+    <p class="explanation">пример смотреть выше, если нажать, например на Facebook, то текст станет красным</p>
+
+    <!-- Ховер и таблицы -->
+    <h3 class="text1">Ховер и таблицы</h3>
+    <table class="schedule">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Маршрут</th>
+                <th>Время в пути</th>
+            </tr>
+        </thead>
+
+        <tbody class="schedule-body">
+            <tr>
+                <td>433</td>
+                <td>Киев - Ковель</td>
+                <td>5 часов</td>
+            </tr>
+            <tr>
+                <td>701</td>
+                <td>Харьков - Днепр</td>
+                <td>7 часов</td>
+            </tr>
+            <tr>
+                <td>258</td>
+                <td>Львов - Одесса</td>
+                <td>4 часа</td>
+            </tr>
+        </tbody>
+
+        <!-- Свойство cursor -->
+        <h3 class="text1">Свойство cursor</h3>
+        <h1><code>cursor</code> property values</h1>
+
+<div class="cursors">
+  <div class="auto">auto</div>
+  <div class="default">default</div>
+  <div class="none">none</div>
+  <div class="context-menu">context-menu</div>
+  <div class="help">help</div>
+  <div class="pointer">pointer</div>
+  <div class="progress">progress</div>
+  <div class="wait">wait</div>
+  <div class="cell">cell</div>
+  <div class="crosshair">crosshair</div>
+  <div class="text">text</div>
+  <div class="vertical-text">vertical-text</div>
+  <div class="alias">alias</div>
+  <div class="copy">copy</div>
+  <div class="move">move</div>
+  <div class="no-drop">no-drop</div>
+  <div class="not-allowed">not-allowed</div>
+  <div class="all-scroll">all-scroll</div>
+  <div class="col-resize">col-resize</div>
+  <div class="row-resize">row-resize</div>
+  <div class="n-resize">n-resize</div>
+  <div class="s-resize">s-resize</div>
+  <div class="e-resize">e-resize</div>
+  <div class="w-resize">w-resize</div>
+  <div class="ns-resize">ns-resize</div>
+  <div class="ew-resize">ew-resize</div>
+  <div class="ne-resize">ne-resize</div>
+  <div class="nw-resize">nw-resize</div>
+  <div class="se-resize">se-resize</div>
+  <div class="sw-resize">sw-resize</div>
+  <div class="nesw-resize">nesw-resize</div>
+  <div class="nwse-resize">nwse-resize</div>
+</div>
+    </table>
+    <a href="color.html" target="_blank">Работа с цветом</a>
+</body>
+</html>

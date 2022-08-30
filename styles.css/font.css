@@ -1,0 +1,17 @@
+/* Свойство font-size */
+.text {
+    font-size: 20px;
+}
+
+.title {
+font-weight: 400;
+}
+
+.text {
+font-weight: 700;
+}
+
+/* Свойство font-style */
+.title {
+    font-style: italic;
+}
