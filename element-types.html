@@ -9,7 +9,130 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles.css/element-types.css">
+    <link rel="stylesheet" href="./styles.css/element-types.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="box indigo"></div>
+    <div class="box green"></div>
+    <div class="box amber"></div>
+
+    <!-- Горизонтальное центрирование блочных элементов -->
+    <div class="parent">
+      <p>Parent element</p>
+      <div class="child">Block-level child element</div>
+    </div>
+
+    <!-- Container-element -->
+    <div class="container">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos totam
+        labore tempora iste et corrupti delectus quae distinctio. Modi
+        praesentium dolores molestias maiores ullam autem illo quae corporis
+        voluptatem facilis.
+      </p>
+
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ab ex
+        alias, excepturi veritatis similique tempora dolore ducimus praesentium,
+        nesciunt culpa? Eveniet, fugit cum quod architecto aliquid magni,
+        perferendis vero corporis, eos magnam mollitia iusto.
+      </p>
+
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor
+        illo aliquam eos dolores fugiat eligendi reprehenderit illum. Vero,
+        minus ut ipsa error sequi voluptatem nemo libero, quaerat ab quas
+        consequuntur dignissimos, neque ipsum non animi eligendi vitae.
+        Corrupti, delectus.
+      </p>
+    </div>
+
+    <header class="page-header">
+      <div class="container">
+        <p>Page header</p>
+      </div>
+
+      <main>
+        <section class="hero">
+          <div class="container">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+          </div>
+
+          <section class="about">
+            <div class="container">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                eius minus illum odio, vel praesentium ullam aliquam adipisci,
+                dignissimos dolorum, beatae inventore? Saepe ipsum odio mollitia
+                totam nostrum, neque, eum vel quo facere beatae quaerat
+                praesentium nihil rerum quae repellat magnam nam ratione ad
+                repudiandae blanditiis expedita dolore consequuntur ex.
+              </p>
+
+              <footer class="page-footer">
+                <div class="conteiner">
+                  <p>Page footer</p>
+                </div>
+              </footer>
+            </div>
+
+            <section class="features">
+              <div class="container">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur cupiditate dolorem reiciendis unde consequatur soluta
+                  amet quod libero accusantium assumenda provident alias earum
+                  voluptate, exercitationem facere laudantium nostrum totam!
+                  Obcaecati maxime placeat accusamus officia, soluta
+                  accusantium, rem repellendus error earum dignissimos magnam
+                  pariatur aspernatur tempora sequi asperiores laboriosam
+                  voluptates eos porro qui excepturi, nostrum ratione.
+                </p>
+              </div>
+            </section>
+          </section>
+        </section>
+        <section>
+          <!-- Inline elements Строчные элементы -->
+          <a class="link" href="">Ссылка</a>
+        </section>
+        <!-- Зазор у строчных элементов -->
+        <div class="card">
+          <img
+            class="card-image"
+            src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320"
+            alt="A cat"
+          />
+          <h2 class="card-heading">Card title 1</h2>
+
+          <div class="card">
+            <img
+              class="card-image no-gap"
+              src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320"
+              alt="A cat"
+            />
+            <h2 class="card-heading">Card title 2</h2>
+          </div>
+        </div>
+
+<!-- Строчно-блочный элементе inline-block -->
+        <a class="link-btn" href="">Кнопка</a>
+
+        <!-- Прячем элементы -->
+        <div class="tabs">
+          <div class="controls">...</div>
+
+          <div class="pane is-active">Lorem ipsum dolor sit amet.</div>
+        <div class="pane">Lorem ipsum dolor sit amet.</div>
+        <div class="pane">Lorem ipsum dolor sit amet.</div>
+        </div>
+        
+        </main>
+    </header>
+  </body>
 </html>
