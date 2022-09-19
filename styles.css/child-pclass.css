@@ -1,1 +1,62 @@
 /* Структурные псевдоклассы (Child) */
+body {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list-item {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    /* background-color: orange; */
+    border-radius: 50%;
+}
+
+/* .list-item:nth-child(5) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(2n) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(even) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(2n+1) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(odd) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(n+6) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(-n+5) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-child(4n+5) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-last-child(3) {
+    background-color: orange;
+} */
+
+/* .list-item:nth-last-child(-n+3) {
+    background-color: orange;
+} */
+
