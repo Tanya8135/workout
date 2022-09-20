@@ -168,3 +168,78 @@ img {
     #e52e71 20px
   );
 }
+
+/* Свойство z-index */
+.container3 {
+  min-height: 100hv;
+  position: relative;
+}
+
+.box1 {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 64px;
+  color: #fff;
+
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box1:nth-child(1) {
+  top: 20px;
+  left: 130px;
+  background-color: #1789fc;
+
+  z-index: 2;
+}
+
+.box1:nth-child(2) {
+  top: 30px;
+  left: 230px;
+  background-color: #ef233c;
+
+  z-index: 2;
+}
+
+.box1:nth-child(3) {
+  top: 140px;
+  left: 220px;
+  background-color: #ffd07b;
+
+  z-index: 1;
+}
+
+.box1:nth-child(4) {
+  top: 120px;
+  left: 120px;
+  background-color: #4caf50;
+}
+
+
+/* Свойство overflow */
+.block {
+  margin-top: 350px;
+}
+
+.box2 {
+  border: 2px solid tomato;
+  width: 400px;
+  height: 200px;
+
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+
+button {
+  display: inline-block;
+  margin-top: 30px;
+  width: 360px;
+font: inherit;
+}
