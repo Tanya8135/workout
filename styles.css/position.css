@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: f9f9fd;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Relative position */
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+.box.relative {
+    position: relative;
+    top: 120px;
+    left: 120px;
+}
+
+.box:nth-child(1) {
+    background-color: teal;
+}
+
+.box:nth-child(2) {
+    background-color: orange;
+}
+
+.box:nth-child(3) {
+    background-color: palevioletred;
+}
+
+
+/* Absolute position */
+img {
+    display: flex;
+    width: 320px;
+    height: auto;
+}
+
+.thumb {
+    position: relative;
+    flex-shrink: 0;
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.thumb > .label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom-left-radius: 4px;
+
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/* Fixed position */
+.chat-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+.fixed {
+    width: 1200px;
+}
+
