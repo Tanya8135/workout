@@ -9,12 +9,6 @@ body {
 }
 
 h1 {
-  justify-content: center;
-  text-align: center;
-  font-size: 24px;
-}
-
-h1 {
   text-align: center;
   font-size: 24px;
 }
@@ -33,7 +27,7 @@ h1 {
 }
 
 .box-overlay:hover .overlay {
-  transform: translatex(0);
+  transform: translatey(0);
 }
 
 .overlay {
