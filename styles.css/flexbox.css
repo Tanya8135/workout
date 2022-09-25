@@ -98,8 +98,10 @@ img {
     break-before: 4px;
 }
 
-.card.flex-start-aligned {
-  align-items: flex-start;
+/* Свойство align-self or
+align-items */
+.card.flex-start-aligned > img  {
+  align-self: flex-start;
 }
 
 .card > .content {
