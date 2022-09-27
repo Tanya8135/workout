@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles.css/form.css" />
+  </head>
+  <body>
     <a href="index.html">Назад</a>
 
     <form name="signup_form" autocomplete="on" novalidate>
-        <label>
-            Email
-            <input type="email" name="email" placeholder="Email">
-        </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="Email" />
+      </label>
 
-        <label>
-            Password
-            <input type="password" name="password">
-        </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
 
-        <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
+      <br />
+      <br />
+      <br />
     </form>
-</body>
+
+    <footer class="container-footer conteiner">
+      <address class="address-footer">
+        <ul class="list footer-flex">
+          <li class="footer-link">
+            <a
+              href="https://goo.gl/maps/oDGecrBfa1tS1iLr5"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              class="address-list"
+            >
+              м. Київ, пр-т Лесі Українки, 26
+            </a>
+          </li>
+          <li class="footer-link">
+            <a
+              id="mailto:info@devstudio.com"
+              href="mailto:info@devstudio.com"
+              class="address-list contacts"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="footer-link">
+            <a
+              id="tel:+380961111111"
+              href="tel:+380961111111"
+              class="address-list contacts"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </address>
+      <div class="flex">
+        <p class="title-soc"><b>Підпишіться на розсилку</b></p>
+      <!-- <div class="form"> -->
+        <ul class="footer-link">
+          <li class="list">
+            <form name="signup-form" autocomplete="on" novalidate>
+              <label class="form-footer">
+                <input
+                  class="form-name"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+          </li>
+          <li class="list">
+            <button type="button" class="btn-dz">
+              Підписатися
+              <svg
+                viewBox="0 0 100 100"
+                width="24"
+                class="contact-svg icon shape-codepen"
+              >
+                <use xlink:href="./images/telegram.svg#icon-telegram"></use>
+              </svg>
+            </button>
+            <!-- </div> -->
+          </li>
+        </ul>
+      <!-- </div> -->
+      
+      <!-- <div class="btn"> -->
+      </div>
+    </footer>
+  </body>
 </html>
