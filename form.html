@@ -82,7 +82,7 @@
             </form>
           </li>
           <li class="list">
-            <button type="button" class="btn-dz">
+            <button type="button" class="btn-dz" data-modal-open>
               Підписатися
               <svg
                 viewBox="0 0 100 100"
@@ -100,5 +100,41 @@
       <!-- <div class="btn"> -->
       </div>
     </footer>
-  </body>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+<!-- <div class="modal1"></div> -->
+      <div class="modal">
+<button type="button" class="close-btn" data-modal-close>
+  <svg viewBox="0 0 32 32" width="11" class="close">
+    <use xlink:href="./images/telegram.svg#icon-close"></use>
+  </svg>
+</button>
+
+
+<h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+
+<ul class="footer-link data-flex">
+  <li>
+    <p>Ім'я</p>
+    <form class="position" name="form-data" autocomplete="off" novalidate>
+      <label >
+        <input  type="text" name="name">
+        <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/telegram.svg#icon-person"></use>
+        </svg>
+      </label>
+    </form>
+  </li>
+  <li>
+    <p>Телефон</p>
+  </li>
+  <li>
+    <p>Пошта</p>
+  </li>
+</ul>
+    </div>
+</div>
+    <script src="./js/modal.js"></script>
+    </body>
 </html>
