@@ -16,16 +16,19 @@
     <a href="index.html">Назад</a>
 
     <form name="signup_form" autocomplete="on" novalidate>
+      
+      <div class="signup">
       <label>
         Email
         <input type="email" name="email" placeholder="Email" />
       </label>
-
+</div>
+<div class="signup">
       <label>
         Password
-        <input type="password" name="password" />
+        <input type="password" name="password"/>
       </label>
-
+</div>
       <button type="submit">Submit</button>
       <br />
       <br />
@@ -116,10 +119,9 @@
 
 <ul class="footer-link data-flex">
   <li>
-    <p>Ім'я</p>
     <form class="position" name="form-data" autocomplete="off" novalidate>
-      <label >
-        <input  type="text" name="name">
+      <label>Ім'я
+        <input  type="text" name="name" placeholder="Ім'я">
         <svg viewBox="0 0 32 32" width="18" class="person">
           <use xlink:href="./images/telegram.svg#icon-person"></use>
         </svg>
