@@ -1,3 +1,9 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+}
+
 .conteiner {
   display: block;
   margin: 0 auto;
@@ -97,8 +103,8 @@
 } */
 
 .btn-dz {
-  display: flex;
-  padding: 0 28px;
+  position: absolute;
+  padding: 10px 28px;
   justify-content: center;
   font-family: sans-serif;
   font-size: 18px;
@@ -110,20 +116,27 @@
   border-radius: 5px;
   border: greenyellow;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-svg {
+  
+  fill: white;
+}
+
+.icon1 {
+  display: flex;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 .btn-dz:hover {
   background-color: yellowgreen;
 }
 
-.icon {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  margin-left: 10px;
-  fill: white;
-}
 
 .form-footer {
   display: block;
@@ -210,11 +223,12 @@
 
 /* Forma modal */
 .title-modal {
-  /* position: absolute; */
-  /* top: 40px; */
-  /* left: 50%;
+  /* position: absolute;
+  top: 40px;
+  left: 50%;
   transform: translate(-50%, -50%); */
-  
+  display: block;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -223,23 +237,146 @@
   color: #212121;
   margin: 0 auto;
   padding: 0 auto;
-  padding-top: 40px;
+  padding-top: 2px;
+  margin-bottom: 30px;
 }
 
-.position {
+/* Form modal*/
+.form {
+  display: block;
+  padding: 20px;
+    margin: 20px;
+    width: 528px;
+}
+
+.form-field {
+  display: block;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 28px;
+  /* justify-content: center; */
+  /* align-items: baseline; */
+  /* align-items: center; */
+  font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+color: #757575;
 }
 
-.person {
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  margin: 0;
+  padding: 10px 12px 10px 42px;
+  /* padding-left: 42px; */
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+outline: none;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: #212121;
+  margin: 0;
+
+  transform: translateY(-50%);
+}
+/* .person {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(0%, 0%);
   fill: black;
   width: 18px;
-}
-
+} */
+/* 
 .data-flex {
   display: block;
+} */
+
+.form-field:focus-within > .icon {
+  fill: #2196F3;
 }
+
+.form-field:focus-within > .form-label {
+  transform: translateY(-35px);
+  left: 0;
+  padding-bottom: 4px;
+}
+
+.form-field:not(:focus-within) > .form-label {
+  left: 42px;
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50%);
+}
+
+.form-input:focus {
+border-color: #2196F3;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(117, 117, 117, 0.5);
+
+  transform: translate(0);
+
+  transition: color 150ms linear;
+}
+
+.test {
+  margin: 0;
+  padding: 0;
+  padding: 12px 16px;
+  border-color: #212121;
+  border-radius: 4px;
+  outline: none;
+}
+
+.test:focus {
+  border-color: #2196F3;
+  
+}
+
+.comment:focus-within > .form-comment {
+  transform: translate(0);
+  left: 0;
+  color: rgba(240, 248, 255, 0);
+}
+
+.text {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+  }

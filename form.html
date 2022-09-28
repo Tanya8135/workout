@@ -87,13 +87,13 @@
           <li class="list">
             <button type="button" class="btn-dz" data-modal-open>
               Підписатися
-              <svg
+              <span class="icon1"><svg
                 viewBox="0 0 100 100"
                 width="24"
-                class="contact-svg icon shape-codepen"
+                class="contact-svg  shape-codepen"
               >
                 <use xlink:href="./images/telegram.svg#icon-telegram"></use>
-              </svg>
+              </svg></span>
             </button>
             <!-- </div> -->
           </li>
@@ -115,26 +115,50 @@
 </button>
 
 
-<h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+    <form class="form" name="form-data" autocomplete="off" novalidate>
+      <b class="title-modal">Залиште свої дані, ми вам передзвонимо</b>
 
-<ul class="footer-link data-flex">
-  <li>
-    <form class="position" name="form-data" autocomplete="off" novalidate>
-      <label>Ім'я
-        <input  type="text" name="name" placeholder="Ім'я">
-        <svg viewBox="0 0 32 32" width="18" class="person">
+      <label class="form-field">
+        <input  type="text" name="name" class="form-input" placeholder=" ">
+        <span class="form-label">Ім'я</span>
+        <span class="icon">
+          <svg viewBox="0 0 32 32" width="18" class="person">
           <use xlink:href="./images/telegram.svg#icon-person"></use>
         </svg>
+      </span>
+      </label>
+
+      <label class="form-field">
+        <input  type="tel" name="tel" class="form-input" placeholder=" ">
+        <span class="form-label">Телефон</span>
+        <span class="icon">
+          <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/telegram.svg#icon-modal-tel"></use>
+        </svg>
+      </span>
+      </label>
+
+      <label class="form-field">
+        <input  type="email" name="email" class="form-input" placeholder=" ">
+        <span class="form-label">Пошта</span>
+        <span class="icon">
+          <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/telegram.svg#icon-modal-email"></use>
+        </svg>
+      </span>
+      </label>
+
+      <b class="text">Коментар</b>
+      <label class="comment">
+        <span class="form-comment">Введіть текст</span>
+        <textarea name="comment" rows="8" class="test" placeholder=" "></textarea>
       </label>
     </form>
-  </li>
-  <li>
-    <p>Телефон</p>
-  </li>
-  <li>
-    <p>Пошта</p>
-  </li>
-</ul>
+
+    <!-- <p>Телефон</p>
+ 
+    <p>Пошта</p> -->
+ 
     </div>
 </div>
     <script src="./js/modal.js"></script>
