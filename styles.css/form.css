@@ -175,6 +175,9 @@ body {
 
 /* Modal */
 .backdrop {
+  display: block;
+  margin: 0;
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -383,8 +386,13 @@ border-color: #2196F3;
 
   .police {
     display: block;
-    margin: 0 auto;
-    padding: 0 auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: baseline;
+    /* margin: 0 auto; */
+    /* padding: 0 auto; */
   }
   
   
@@ -396,3 +404,8 @@ border-color: #2196F3;
     margin-left: 9px;
   }
   
+.btn-form {
+  display: block;
+  
+  /* position: relative; */
+}
