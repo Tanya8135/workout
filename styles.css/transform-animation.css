@@ -1,517 +1,513 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #f9f9fd;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f9f9fd;
 }
 
 p {
-    margin-bottom: 20px;
-    font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .title {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /* Transform (2D-transform) */
 .container {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box::before {
-    display: inline-block;
-    font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .box:nth-child(1) {
-    background-color: orange;
+  background-color: orange;
 
-    animation: animate125 3000ms infinite 1000ms;
+  animation: animate125 3000ms infinite 1000ms;
 }
 
 .box:nth-child(1)::before {
-    content: "scale(1.25)";
+  content: 'scale(1.25)';
 }
 
 .box:nth-child(2) {
-    background-color: #03a9f4;
+  background-color: #03a9f4;
 }
 
 .box:nth-child(2)::before {
-    content: "scale(1)";
+  content: 'scale(1)';
 }
 
 .box:nth-child(3) {
-    background-color: palevioletred; 
+  background-color: palevioletred;
 
-    animation: animate75 3000ms infinite 1000ms;
+  animation: animate75 3000ms infinite 1000ms;
 }
 
 .box:nth-child(3)::before {
-    content: "scale(0.75)";
+  content: 'scale(0.75)';
 }
 
 @keyframes animate125 {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.25);
-    }
+  50% {
+    transform: scale(1.25);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes animate75 {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(0.75);
-    }
+  50% {
+    transform: scale(0.75);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Perspective */
 .scene {
-    height: 200px;
-    width: 200px;
-    border: 2px solid black;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    border-radius: 4px;
-    color: white;
-    font-size: 20px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box1.rotate-x {
-    animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
+  animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
 }
 
 .box1.rotate-y {
-    animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
 }
 
 .box1.rotate-x {
-    background-color: tomato;
+  background-color: tomato;
 }
 
 .box1.rotate-y {
-    background-color: blue;
+  background-color: blue;
 }
 
 .scene + .scene {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .container1 {
-    display: flex;
+  display: flex;
 }
 
 @keyframes rotateX {
-    0% {
-        transform: perspective(400px) 
-        rotateX(0def);
-    }
+  0% {
+    transform: perspective(400px) rotateX(0def);
+  }
 
-    100% {
-        transform: perspective(400px) 
-        rotateX(60deg);
-    }
+  100% {
+    transform: perspective(400px) rotateX(60deg);
+  }
 }
 
 @keyframes rotateY {
-    0% {
-        transform: perspective(400px) 
-        rotateY(0deg);
-    }
-    100% {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  100% {
     transform: perspective(400px) rotateY(60deg);
-    }
+  }
 }
 /* Turn поворот */
 .container2 {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box2 {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box2::before {
-    display: inline-block;
-    font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .box2:nth-child(1) {
-    background-color: orange;
+  background-color: orange;
 
-    animation: animate30 3000ms infinite 1000ms;
+  animation: animate30 3000ms infinite 1000ms;
 }
 
 .box2:nth-child(1)::before {
-    content: "rotate(30deg)";
+  content: 'rotate(30deg)';
 }
 
 .box2:nth-child(2) {
-    background-color: #03a9f4;
+  background-color: #03a9f4;
 
-    animation: animate115 3000ms infinite 1000ms;
+  animation: animate115 3000ms infinite 1000ms;
 }
 
 .box2:nth-child(2)::before {
-    content: "rotate(115deg)";
+  content: 'rotate(115deg)';
 }
 
 .box2:nth-child(3) {
-    background-color: palevioletred;
+  background-color: palevioletred;
 
-    animation: animate45 3000ms infinite 1000ms;
+  animation: animate45 3000ms infinite 1000ms;
 }
 
 .box2:nth-child(3)::before {
-    content: "rotate(-45deg)";
+  content: 'rotate(-45deg)';
 }
 
 @keyframes animate30 {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(30deg);
-    }
+  50% {
+    transform: rotate(30deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes animate115 {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(115deg);
-    }
+  50% {
+    transform: rotate(115deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes animate45 {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(-45deg);
-    }
+  50% {
+    transform: rotate(-45deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Offset смещение */
 .container3 {
-min-height: 50vh;
-display: flex;
-align-items: center;
-justify-content: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box3 {
-    width: 250px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box3::before {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .box3:nth-child(1) {
-    background-color: orange;
+  background-color: orange;
 
-    animation: animateX50 3000ms infinite 1000ms;
+  animation: animateX50 3000ms infinite 1000ms;
 }
 
 .box3:nth-child(1)::before {
-    content: "translateX(50px)";
+  content: 'translateX(50px)';
 }
 
 .box3:nth-child(2) {
-    background-color: #03a9f4;
+  background-color: #03a9f4;
 
-    animation: animateY110 3000ms infinite 1000ms;
+  animation: animateY110 3000ms infinite 1000ms;
 }
 
 .box3:nth-child(2)::before {
-    content: "translateY(110px)";
+  content: 'translateY(110px)';
 }
 
 .box3:nth-child(3) {
-    background-color: palevioletred;
+  background-color: palevioletred;
 
-    animation: animateX50Y100 3000ms infinite 1000ms;
+  animation: animateX50Y100 3000ms infinite 1000ms;
 }
 
 .box3:nth-child(3)::before {
-    content: "translate(-50px, -100px)";
+  content: 'translate(-50px, -100px)';
 }
 
 @keyframes animateX50 {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    50% {
-        transform: translateX(50px);
-    }
+  50% {
+    transform: translateX(50px);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes animateY110 {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(110px);
-    }
+  50% {
+    transform: translateY(110px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes animateX50Y100 {
-    0% {
-        transform: translate(0, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
 
-    50% {
-        transform: translate(-50px, -50px);
-    }
+  50% {
+    transform: translate(-50px, -50px);
+  }
 
-    100% {
-        transform: translate(0, 0);
-    }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* transform-origin Точка трансформации */
 :root {
-    --dot-size: 16px
+  --dot-size: 16px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fff;
-    font-family: sans-serif;
-    line-height: 1.5;
-    color: #2a2a2a;
+  background-color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
 }
 
 .container4 {
-    min-height: 100vh;
-    width: 420px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-left: auto;
-    background-repeat: auto;
+  min-height: 100vh;
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-repeat: auto;
 }
 
 .box4 {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid tomato;
-    border-radius: 4px;
-    font-size: 17px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid tomato;
+  border-radius: 4px;
+  font-size: 17px;
 }
 
 .box4::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.3);
-  
-    animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+}
+
+.box4:nth-child(1)::before {
+  transform-origin: top left;
+}
+
+.box4:nth-child(2)::before {
+  transform-origin: top center;
+}
+
+.box4:nth-child(3)::before {
+  transform-origin: top right;
+}
+
+.box4:nth-child(4)::before {
+  transform-origin: center left;
+}
+
+.box4:nth-child(5)::before {
+  transform-origin: center center;
+}
+
+.box4:nth-child(6)::before {
+  transform-origin: center right;
+}
+
+.box4:nth-child(7)::before {
+  transform-origin: bottom left;
+}
+
+.box4:nth-child(8)::before {
+  transform-origin: bottom center;
+}
+
+.box4:nth-child(9)::before {
+  transform-origin: bottom right;
+}
+
+.box4::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.box4:nth-child(1)::after {
+  top: calc(var(--dot-size) / -2);
+  left: calc(var(--dot-size) / -2);
+}
+
+.box4:nth-child(2)::after {
+  top: calc(var(--dot-size) / -2);
+  left: center;
+}
+
+.box4:nth-child(3)::after {
+  top: calc(var(--dot-size) / -2);
+  right: calc(var(--dot-size) / -2);
+}
+
+.box4:nth-child(4)::after {
+  top: center;
+  left: calc(var(--dot-size) / -2);
+}
+
+.box4:nth-child(5)::after {
+  top: center;
+  left: center;
+}
+
+.box4:nth-child(6)::after {
+  top: center;
+  right: calc(var(--dot-size) / -2);
+}
+
+.box4:nth-child(7)::after {
+  bottom: calc(var(--dot-size) / -2);
+  left: calc(var(--dot-size) / -2);
+}
+
+.box4:nth-child(8)::after {
+  bottom: calc(var(--dot-size) / -2);
+  left: center;
+}
+
+.box4:nth-child(9)::after {
+  bottom: calc(var(--dot-size) / -2);
+  right: calc(var(--dot-size) / -2);
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
   }
 
-  .box4:nth-child(1)::before {
-    transform-origin: top left;
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
   }
-  
-  .box4:nth-child(2)::before {
-    transform-origin: top center;
-  }
-  
-  .box4:nth-child(3)::before {
-    transform-origin: top right;
-  }
-  
-  .box4:nth-child(4)::before {
-    transform-origin: center left;
-  }
-  
-  .box4:nth-child(5)::before {
-    transform-origin: center center;
-  }
-  
-  .box4:nth-child(6)::before {
-    transform-origin: center right;
-  }
-  
-  .box4:nth-child(7)::before {
-    transform-origin: bottom left;
-  }
-  
-  .box4:nth-child(8)::before {
-    transform-origin: bottom center;
-  }
-  
-  .box4:nth-child(9)::before {
-    transform-origin: bottom right;
-  }
-
-  .box4::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: var(--dot-size);
-    height: var(--dot-size);
-    background-color: blue;
-    border-radius: 50%;
-  }
-  
-  .box4:nth-child(1)::after {
-    top: calc(var(--dot-size) / -2);
-    left: calc(var(--dot-size) / -2);
-  }
-  
-  .box4:nth-child(2)::after {
-    top: calc(var(--dot-size) / -2);
-    left: center;
-  }
-
-  .box4:nth-child(3)::after {
-    top: calc(var(--dot-size) / -2);
-    right: calc(var(--dot-size) / -2);
-  }
-  
-  .box4:nth-child(4)::after {
-    top: center;
-    left: calc(var(--dot-size) / -2);
-  }
-  
-  .box4:nth-child(5)::after {
-    top: center;
-    left: center;
-  }
-  
-  .box4:nth-child(6)::after {
-    top: center;
-    right: calc(var(--dot-size) / -2);
-  }
-  
-  .box4:nth-child(7)::after {
-    bottom: calc(var(--dot-size) / -2);
-    left: calc(var(--dot-size) / -2);
-  }
-  
-  .box4:nth-child(8)::after {
-    bottom: calc(var(--dot-size) / -2);
-    left: center;
-  }
-
-  .box4:nth-child(9)::after {
-    bottom: calc(var(--dot-size) / -2);
-    right: calc(var(--dot-size) / -2);
-  }
-  
-  @keyframes rotateWithOrigin {
-    0% {
-      transform: rotate3d(0, 0, 1, 0deg);
-    }
-  
-    100% {
-      transform: rotate3d(0, 0, 1, 360deg);
-    }
-  }
+}
