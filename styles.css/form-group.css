@@ -1,0 +1,46 @@
+/* Элементы <fieldset> и <legend> */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+}
+
+/* Группировка с возможностью оформления */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 500px;
+}
+
+.form-group p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title {
+    padding-top: 30px;
+    color: #212121;
+    /* border-bottom: 1px solid #212121; */
+    text-decoration: underline;
+}

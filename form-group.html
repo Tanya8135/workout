@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы и группирование</title>
+
+    <link rel="stylesheet" href="./styles.css/form-group.css">
+</head>
+<body>
+    <a href="index.html">Назад</a>
+    <h1 hidden></h1>
+    <!-- Элементы <fieldset> и <legend> -->
+    <h3>Элементы &lt;fieldset&gt; и &lt;legend&gt</legend></h3>
+    <form>
+        <fieldset>
+            <legend>Enter your contact detailes</legend>
+            <label>
+                Name
+                <input type="text" name="username">
+            </label>
+            <label>Email
+                <input type="email" name="email">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your favorite programing language</legend>
+            <label>
+                <input type="checkbox" name="language" value="python">
+                Python
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="js">
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" name="language" value="ruby">
+                Ruby
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>I want to receive</legend>
+            <label>
+                <input type="checkbox" name="newsletter" value="weekly">
+                The weekly newsletter
+            </label>
+            <label>
+                <input type="checkbox" name="newsletter" value="company_offers">
+                Offers from the company
+            </label>
+            <label>
+                <input type="checkbox" name="newsletter" value="associated_offers">
+                Offers from associated companies
+            </label>
+        </fieldset>
+
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <!-- Группировка с возможностью оформления -->
+    <h3 class="title">Группировка с возможностью оформления</h3>
+    <!-- <div role="group" aria-labelledby="contact-details-head">
+        <p id="contact-details-head">Enter your contact details</p>
+        Related elements
+      </div> -->
+      <form class="form">
+        <div class="form-group" role="group" aria-labelledby="contact-details-head">
+          <p id="contact-details-head">Enter your contact details</p>
+          <label>
+            Name
+            <input type="text" name="username" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+        </div>
+      
+        <div class="form-group" role="group" aria-labelledby="language-head">
+          <p id="language-head">Your favourite programming language</p>
+          <label>
+            <input type="checkbox" name="language" value="python">
+            Python
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="js">
+            JavaScript
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="ruby">
+            Ruby
+          </label>
+        </div>
+      
+        <div class="form-group" role="group" aria-labelledby="newsletter-head">
+          <p id="newsletter-head">I want to receive</p>
+          <label>
+            <input type="checkbox" name="newsletter" value="weekly">
+            The weekly newsletter
+          </label>
+          <label>
+            <input type="checkbox" name="newsletter" value="company_offers">
+            Offers from the company
+          </label>
+          <label>
+            <input type="checkbox" name="newsletter" value="associated_offers">
+            Offers from associated companies
+          </label>
+        </div>
+      
+        <button type="submit">Subscribe</button>
+      </form>
+</body>
+</html>
